@@ -78,6 +78,12 @@ namespace splitJson
 
         static void Main(string[] args)
         {
+            
+        }
+
+
+        public void split() {
+
             using (StreamReader file = File.OpenText(@"C:\Users\lianpan\Desktop\DGRP\search_candidate\json\candidates - Copy.json"))
             {
                 String line = file.ReadToEnd();
@@ -159,11 +165,12 @@ namespace splitJson
                         m = n;
                         num++;
                     }
-
-
                 }
             }
+        }
 
+
+        public void cut() {
             //if (t > 0)
             //{
             //    //line=line.Replace("]}{\"items\":[", ",").Replace(@"\", "");
